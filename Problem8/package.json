@@ -1,0 +1,19 @@
+{
+  "name": "problem8",
+  "version": "1.0.0",
+  "description": "Node.js application for problem 8",
+  "main": "app.js",
+  "scripts": {
+  "start": "node app.js",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "greet": "echo Hello, Heer! Welcome to Node.js Project",
+  "info": "node -v && npm -v",
+  "clean": "echo Cleaning temp files..."
+},
+
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
