@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Hello</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: Arial, sans-serif;">
+
+    <h1>Hello NodeJS AJAX Example</h1>
+
+    <button onclick="getHello()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+        Get Hello
+    </button>
+
+    <p id="output" style="margin-top: 20px; font-size: 18px;"></p>
+
+    <script>
+        function getHello() {
+            fetch('/gethello')
+                .then(res => res.text())
+                .then(data => document.getElementById('output').innerText = data)
+                .catch(err => console.error('Error:', err));
+        }
+    </script>
+
+</body>
+</html>
